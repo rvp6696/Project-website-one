@@ -14,12 +14,13 @@ html, body {
 #nav {
     height: 125px;
     width: 100%;
-    background-color: red;
     display: flex;
     align-items: center;
     gap: 20px;
     justify-content: flex-start;
     padding: 0px 100px 0px 100px;
+    position: fixed;
+    z-index: 99;   /* Navbar will go on top of the video*/
 }
 
 #nav img {
@@ -28,4 +29,45 @@ html, body {
 
 #nav h4 {
     font-weight: 500;
+}
+
+#video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;    /* Covers the full screen with video*/
+    position: fixed;
+}
+
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.37);  /* reduces the transparency*/
+}
+
+#page1 {
+    height: 100vh;
+    width: 206vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#page1 h1 {
+    font-size: 140px;
+    font-weight: 900;
+}
+
+#page1 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+#page1 p {
+    font-size: 19px;
+    font-weight: 400;
+    width: 40%;
+    margin-top: 20px;
 }
